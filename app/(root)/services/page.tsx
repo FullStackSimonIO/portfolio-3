@@ -10,7 +10,7 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "I build websites that are fast, secure, and easy to manage. I use modern technologies like React, Next.js, and Tailwind CSS to create responsive and accessible websites.",
+      "I build websites that are fast, secure, and easy to manage. I use modern technologies like React, Next.js, and Tailwind CSS to create responsive and accessible websites. I can also include multiple Frameworks like Framer Motion, Three.js and GSAP.",
     href: "",
   },
   {
@@ -29,7 +29,7 @@ const services = [
   },
   {
     num: "04",
-    title: "Online Marketing & Social Media",
+    title: "Online Marketing",
     description:
       "I help businesses reach their target audience through online marketing and social media. I use modern marketing techniques like content marketing, email marketing, and social media advertising to help businesses grow their online presence.",
     href: "",
