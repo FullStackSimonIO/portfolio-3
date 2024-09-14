@@ -16,7 +16,7 @@ import {
 
 import Link from "next/link";
 import Image from "next/image";
-import WorkSliderButtons from "@/components/WorkSliderButtons";
+import WorkSliderButtons from "@/components/work/hero/WorkSliderButtons";
 
 const projects = [
   {
@@ -64,7 +64,7 @@ const projects = [
   },
 ];
 
-const Work = () => {
+const Hero = () => {
   const [project, setProject] = useState(projects[0]);
 
   const handleSlideChange = (slide) => {
@@ -183,4 +183,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default Hero;

@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-const config: Config = {
+import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+const config = {
   darkMode: ["class"],
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -29,10 +28,31 @@ const config: Config = {
           hover: "#00e187", // Hover color
         },
       },
-      keyframes: {},
-      animation: {},
+      keyframes: {
+        scroll: {
+          to: {
+            transform: "translate(calc(-50% - 0.5rem))",
+          },
+        },
+      },
+      animation: {
+        scroll:
+          "scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite",
+      },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), addVariablesForColors],
 };
+
+function addVariablesForColors({ addBase, theme }: any) {
+  const allColors = flattenColorPalette(theme("colors"));
+  const newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
+
 export default config;

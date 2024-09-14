@@ -26,7 +26,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/(root)/work/page.jsx"
+    "app/(root)/work/page.tsx",
+    "components/work/Hero.jsx"
   ],
   "exclude": ["node_modules"]
 }
