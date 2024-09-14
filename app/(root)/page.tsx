@@ -12,7 +12,7 @@ const Home = () => {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Engineer</span>
             <h1 className="h1 mb-6">
-              Hello I'm
+              Hello I&apos;m
               <br />
               <span className="text-accent">Simon</span>
             </h1>
