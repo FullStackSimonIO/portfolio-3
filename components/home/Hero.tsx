@@ -18,11 +18,15 @@ const Hero = () => {
               <span className="text-accent">Simon</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I build the most powerfull Fullstack Webapplications with{" "}
-              <span className="text-accent">NextJS</span> and{" "}
+              I build the most powerfull{" "}
+              <span className="text-accent">Fullstack Webapplications</span>{" "}
+              with <span className="text-accent">NextJS</span> and{" "}
               <span className="text-accent">Typescript</span>. <br />
-              Boost your business to the next level with perfectly SEO
-              optimized, ultra fast and highly scalable Webapplication.
+              Boost your business to the next level with{" "}
+              <span className="text-accent">perfectly SEO optimized</span>,{" "}
+              <span className="text-accent">ultra fast</span> and{" "}
+              <span className="text-accent">highly scalable</span>{" "}
+              Webapplication.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <Button
