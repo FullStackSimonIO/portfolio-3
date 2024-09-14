@@ -70,8 +70,11 @@ const Work = () => {
   const handleSlideChange = (slide) => {
     // get current slide index
     const currentIndex = slide.activeIndex;
-    //update project state based on current slide index
-    setProject(projects[currentIndex]);
+    // check if currentIndex is defined
+    if (currentIndex !== undefined) {
+      //update project state based on current slide index
+      setProject(projects[currentIndex]);
+    }
   };
   return (
     <motion.section
