@@ -1,26 +1,42 @@
-"use client";
-
-import React from "react";
-import { InfiniteMovingCards } from "../ui/infinite-moving-cards";
-
-export function Testimonials() {
-  return (
-    <div className="h-auto rounded-md flex flex-col antialiased bg-primary dark:bg-black dark:bg-grid-white/[0.05] items-center relative overflow-hidden">
-      <h1 className="text-4xl font-bold mb-8">Customers Feedback:</h1>
-      <InfiniteMovingCards
-        items={testimonials}
-        direction="right"
-        speed="slow"
-      />
-    </div>
-  );
-}
+import TestimonialCard from "./TestimonialCard";
 
 const testimonials = [
   {
+    title: "High Quality Website for my Yoga Business",
+    name: "Maria Zillinger",
     description:
       "I am so happy with the design of my new website. It is exactly what I wanted. I will definitely be coming back for more projects.",
-    name: "Maria Zillinger",
-    title: "High Quality Website for my Yoga Business",
+    rating: 5,
+  },
+  {
+    description:
+      "I was looking for a Website for my Videography business and I found the perfect design here. I am very happy with the result.",
+    name: "Julian Stümpfl",
+    title: "Great Website Design for my video Website",
+    rating: 5,
+  },
+  {
+    description:
+      "As a Craftsman I needed a website to showcase my work. I found the perfect design here. I am very happy with the result.",
+    name: "Nicolai Stümpfl",
+    title: "Great Website Design for my craftsman business",
+    rating: 5,
   },
 ];
+
+const Testimonials = () => {
+  return (
+    <section className="flex flex-col items-center justify-center">
+      <div className="flex items-center justify-center py-8">
+        <h1 className="text-4xl">Customers Feedback</h1>
+      </div>
+      <div className="grid xl:grid-cols-3 gap-8 items-center justify-center">
+        {testimonials.map((testimonial, index) => {
+          return <TestimonialCard key={index} {...testimonial} />;
+        })}
+      </div>
+    </section>
+  );
+};
+
+export default Testimonials;
