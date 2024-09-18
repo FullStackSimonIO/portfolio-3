@@ -53,8 +53,8 @@ const Contact = () => {
                 Let&apos;s work together!
               </h3>
               <p className="text-white/60 ">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                Doloribus, voluptas?
+                Interested in collaborationg with me? Fill out the form below
+                and I will get back to you as soon as possible.
               </p>
               {/* Input */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6 ">

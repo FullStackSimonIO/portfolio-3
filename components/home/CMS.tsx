@@ -45,7 +45,7 @@ const CMS = () => {
         </Carousel>
 
         <div className="mt-8 md:mt-0">
-          <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-accent">
+          <h2 className="mb-4 text-3xl md:text-4xl tracking-tight font-extrabold text-white">
             Need a CMS for your website?
           </h2>
           <p className="mb-6 font-light text-white/80 md:text-lg">

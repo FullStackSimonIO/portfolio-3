@@ -1,7 +1,6 @@
 import React from "react";
 import { Button } from "../ui/button";
 import { LinkPreview } from "../ui/link-preview";
-import { Link } from "lucide-react";
 
 const AboutMe = () => {
   return (
@@ -51,15 +50,21 @@ const AboutMe = () => {
                 Shadcn-UI
               </p>
             </LinkPreview>
-            <p className="flex items-center justify-between hover:text-accent">
-              Aceternity-UI
-            </p>
-            <p className="flex items-center justify-between hover:text-accent">
-              PostgreSQL
-            </p>
-            <p className="flex items-center justify-between hover:text-accent">
-              Prisma
-            </p>
+            <LinkPreview url="https://ui.aceternity.com">
+              <p className="flex items-center justify-between hover:text-accent">
+                Aceternity-UI
+              </p>
+            </LinkPreview>
+            <LinkPreview url="https://www.postgresql.org">
+              <p className="flex items-center justify-between hover:text-accent">
+                PostgreSQL
+              </p>
+            </LinkPreview>
+            <LinkPreview url="https://prisma.io">
+              <p className="flex items-center justify-between hover:text-accent">
+                Prisma
+              </p>
+            </LinkPreview>
           </div>
         </div>
       </section>
